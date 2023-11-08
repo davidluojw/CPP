@@ -10,7 +10,9 @@ T sum(T x, T y)
      y;
 }
 // Explicitly instantiate
-template double sum<double>(double, double);
+// template double sum<double>(double, double);
+template float sum<float>(float, float);
+
 
 int main()
 {

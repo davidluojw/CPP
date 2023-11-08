@@ -20,22 +20,22 @@ int main()
     std::cout << "Please input two numbers <q to quit>:";
     while (std::cin >> x >> y)
     {
-        { //try and catch
-            try{
-                z = ratio(x,y);
-                std::cout << "ratio(" << x << ", " << y<< ") = " << z << std::endl;
-            }
-            catch(const char * msg)
-            {
-                std::cerr << "Call ratio() failed: " << msg << std::endl;
-                std::cerr << "I give you another chance." << std::endl;
-            }
-        }
-
-        // { //if no try-catch
-        //     z = ratio(x,y);
-        //     std::cout << "ratio(" << x << ", " << y<< ") = " << z << std::endl;            
+        // { //try and catch
+        //     try{
+        //         z = ratio(x,y);
+        //         std::cout << "ratio(" << x << ", " << y<< ") = " << z << std::endl;
+        //     }
+        //     catch(const char * msg)
+        //     {
+        //         std::cerr << "Call ratio() failed: " << msg << std::endl;
+        //         std::cerr << "I give you another chance." << std::endl;
+        //     }
         // }
+
+        { //if no try-catch
+            z = ratio(x,y);
+            std::cout << "ratio(" << x << ", " << y<< ") = " << z << std::endl;            
+        }
 
         std::cout << "Please input two numbers <q to quit>:";
     }

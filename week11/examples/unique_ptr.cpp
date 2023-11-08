@@ -54,7 +54,7 @@ int main()
     std::cout << "mt2: " <<*mt2 << std::endl;
 
     // std::unique_ptr<MyTime> mt3 = mt1; // error
-    std::unique_ptr<MyTime> mt3 = std::move(mt1); 
+    std::unique_ptr<MyTime> mt3 = std::move(mt1);
     // std::shared_ptr<MyTime> mt3 = std::move(mt1);//okay
     
     // std::cout << "mt1: " <<*mt1 << std::endl;

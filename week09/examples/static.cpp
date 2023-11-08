@@ -46,7 +46,7 @@ class Student
         born = b;
     }
     static size_t getTotal() {return student_total;}
-    // the declarations, the definitions are out of the class
+    // the declarations, the definitions are out sof the class
     void setGender(bool isMale);
     void printInfo();
 };
@@ -62,7 +62,7 @@ void Student::printInfo()
     std::cout << "Gender: " << (male ? "Male" : "Female") << std::endl;
 }
 
-//size_t Student::student_total = 0; // definition it here
+size_t Student::student_total = 0; // definition it here
 
 int main()
 {

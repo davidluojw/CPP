@@ -10,7 +10,7 @@ class IntMat
   public:
     IntMat(size_t rows, size_t cols): 
                     rows(rows), cols(cols)
-    {
+    { 
         data = new int[rows * cols]{};
     }
     ~IntMat()

@@ -24,6 +24,7 @@ class MyTime
     // prefix increment
     MyTime& operator++()
     {
+        std::cout << "operator prefix increment" << std::endl;
         this->minutes++;
         this->hours += this->minutes / 60;
         this->minutes = this->minutes % 60;
@@ -33,6 +34,7 @@ class MyTime
     // postfix increment
     MyTime operator++(int)
     {
+        std::cout << "operator postfix increment" << std::endl;
         MyTime old = *this; // keep the old value
         operator++();  // prefix increment
         return old; 

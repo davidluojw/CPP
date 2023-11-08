@@ -28,6 +28,7 @@ class MyString
     }
     MyString & operator=(const MyString &ms)
     {
+        std::cout << "Copy Assignment " << std::endl;
         create(ms.buf_len, ms.characters);
         return *this;
     }
@@ -51,6 +52,7 @@ class MyString
         this->buf_len = 0;
         if(this->characters!=NULL)
         {
+            std::cout << "this->characters != NULL "<< std::endl;
             delete []this->characters;
             this->characters = NULL;
         }

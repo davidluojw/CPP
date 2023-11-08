@@ -10,11 +10,16 @@ int main()
     cout << "str1: " << str1 << endl;
 
     MyString str2 = str1; 
+    cout << "str1: " << str1 << endl;
     cout << "str2: " << str2 << endl;
 
     MyString str3;
+    cout << "str1: " << str1 << endl;
+    cout << "str2: " << str2 << endl;
     cout << "str3: " << str3 << endl;
     str3 = str1;
+    cout << "str1: " << str1 << endl;
+    cout << "str2: " << str2 << endl;
     cout << "str3: " << str3 << endl;
 
     return 0;

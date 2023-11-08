@@ -65,7 +65,7 @@ class MyString
     }
 };
 
-class MyMap: pubic MyString
+class MyMap: public MyString
 {
   private:
     char * keyname;

@@ -16,7 +16,7 @@ int main()
     strcat(result, str2);
     cout << "Result = " <<  result << endl;
 
-    cout << "strcmp() = " << strcmp(str1, str2) << endl;
+    cout << "strcmp() = stri" << strcmp(str1, str2) << endl;
 
     //strcat(str1, str2); //danger operation!
     //cout << "str1 = " << str1 << endl;

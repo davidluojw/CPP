@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-// float array_sum(float *values, size_t length) // equivalent to the next line
-float array_sum(float values[], size_t length)
+float array_sum(float *values, size_t length) // equivalent to the next line
+//float array_sum(float values[], size_t length)
 {
     cout << sizeof(values) << endl; // 4 or 8
     float sum = 0.0f;
